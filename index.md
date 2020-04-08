@@ -1,5 +1,5 @@
 ## About Me
-I'm creating projects using Java and C++. I interested in GUI applications. I am studying at Istanbul Technical University.
+I'm creating projects using Java and C++. I am interested in GUI applications. I am studying at Istanbul Technical University.
 <br/>
 ## My Projects
 ### H Component Library (HCl)
