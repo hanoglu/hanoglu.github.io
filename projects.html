@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.bgimg-1 {
+  background-image: url("main2.png");
+  min-height: 100%;
+}
+
+.bgimg-2 {
+  background-image: url("img_parallax2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("img_parallax3.jpg");
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  background-color: #111;
+    border-radius: 8px 8px 8px 8px;
+opacity: 0.8;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  <!--letter-spacing: 5px;-->
+  <!--text-transform: uppercase;-->
+  <!--font: 20px "Lato", sans-serif;-->
+  color: #111;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<style>
+#mySidenav a {
+    position: fixed;
+	
+    
+	 left: -90px;
+    
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+   
+    border-radius: 0 5px 5px 0;
+	z-index: 999;
+}
+
+#mySidenav a:hover {
+    left: 0; 
+	
+	color: white;
+	
+}
+
+#about {
+	transition: 0.3s;
+	 left: -90px;
+    top: 60px;
+	color: #d6ca02;
+    background-color: #d6ca02;
+}
+
+
+#blog {
+	transition: 0.6s;
+	left: -90px;
+    top: 120px;
+	color: #62b905;
+    background-color: #62b905;
+}
+
+#projects {
+	transition: 0.9s;
+	left: -90px;
+    top: 180px;
+	color: #0576b9;
+    background-color: #0576b9;
+}
+
+#contact {
+	transition: 1.2s;
+	left: -90px;
+    top: 240px;
+	color: #555;
+    background-color: #555
+}
+</style>
+
+
+
+
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="home.html" id="about">Home</a>
+  <a href="projects.html" id="blog">Projects</a>
+  <a href="tutorials.html" id="projects">Tutorials</a>
+  <a href="contact.html" id="contact">Contact</a>
+</div>
+
+	<script>
+	
+
+		var myDiv = document.getElementById('about');;
+		/*document.addEventListener('mousemove', function checkHover() {
+		if(isHover(myDiv)){
+			document.getElementById("blog").style.left = 0;
+			document.getElementById("projects").style.left = 0;
+			document.getElementById("blog").style.color = "white";
+			document.getElementById("projects").style.color = "white";	
+		}});*/
+	
+	for( i=0;i<4;i++){
+		
+		
+		var myDiv = document.getElementById("about");;
+		if(i=="1"){
+			myDiv = document.getElementById("blog");;}
+		else if(i=="2"){
+			myDiv = document.getElementById("projects");;}
+		else if(i=="3"){
+			myDiv = document.getElementById("contact");;}
+		
+		myDiv.onmouseover = function(event) {
+			//let target = event.target;
+			//target.style.background = 'pink';
+			document.getElementById("about").style.left = "0px";
+			document.getElementById("blog").style.left = "0px";
+			document.getElementById("projects").style.left = "0px";
+			document.getElementById("contact").style.left = "0px";
+			document.getElementById("blog").style.color = "white";
+			document.getElementById("about").style.color = "white";
+
+			document.getElementById("projects").style.color = "white";
+			document.getElementById("contact").style.color = "white";			
+		};
+		myDiv.onmouseout = function(event) {
+			//let target = event.target;
+			//target.style.background = 'pink';
+			document.getElementById("blog").style.left = "-90px";
+			document.getElementById("about").style.left = "-90px";
+			document.getElementById("contact").style.left = "-90px";
+			document.getElementById("projects").style.left = "-90px";
+			document.getElementById("blog").style.color = "#62b905";
+			document.getElementById("projects").style.color = "#0576b9";	
+			document.getElementById("contact").style.color = "#555";	
+			document.getElementById("about").style.color = "#d6ca02";
+
+			};
+	}
+	</script>
+	
+
+
+<style>
+.button {
+	 display: inline-block;
+  
+   border: 3px solid black;
+  
+  
+  background-color: white;//#f4511e
+  border: none;
+   border-radius: 30px 30px 30px 30px;
+  color: black;
+  width: 200px;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  padding: 0px;
+
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+   
+    
+}
+.button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	 background-color: black;
+	 color: white;
+	
+}
+</style>
+
+<style>
+.text {
+	 display: inline-block;
+  
+   border: 3px solid black;
+  
+  
+  background-color: white;//#f4511e
+  border: none;
+   border-radius: 30px 30px 30px 30px;
+  color: gray;
+  width: 35%;
+  height: 28px;
+  text-align: center;
+  font-size: 16px;
+  padding: 0px;
+
+  transition: all 0.5s;
+  margin: 10px;
+   
+    
+}
+.text:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	 //background-color: black;
+	 color: black;
+	
+}
+</style>
+
+
+
+
+
+
+<style>
+.indir {
+	 display: inline-block;
+  border-radius: 4px;
+
+  
+  
+   border: 3px solid orange;
+  
+  
+  background-color: orange;//#f4511e
+  border: none;
+  color: black;
+  text-align: center;
+  font-size: 16px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 10px;
+   
+	border-radius: 5px;
+    
+}
+.indir:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.indir span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.indir span:after {
+  content: '  \00bb';// \00bb
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.indir:hover span {
+  padding-right: 25px;
+}
+
+.indir:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+</style>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+
+
+<body>
+
+
+
+
+
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link href="extras/assets/css/bootstrap.min2.css" rel="stylesheet">
+    <link href="extras/assets/css/style.css" rel="stylesheet">
+  </head>
+
+
+
+<div class="bgimg-1">
+  <div class="caption">
+    <span class="border">Projects</span><br><br><br>
+	</div>
+	
+  
+</div>
+
+	
+<div class="bgimg-2">
+  <div class="caption">
+    <span class="border" style="background-color:transparent;font-size:25px;color: #000000;">My Projects</span>
+  </div>
+</div>
+
+<div style="position:relative;">
+  <div style="color: #777;background-color:white;text-align:center;padding:50px 80px;text-align: justify;">
+    <h3 style="text-align:center;">H Component Library</h3>
+  <p style="text-align:center;">A Java Swing Like Library for C++</p>
+	<div style="text-align:center">
+	<button onclick="window.location.href='hcl.html';" name="satinal" class="button" style="vertical-align:middle"><span>More</span></button>
+	</div>
+  </div>
+</div>
+
+
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: justify;">
+  </div>
+</div>
+
+
+
+<div style="position:relative;">
+  <div style="color:#ddd;background-color:#282E34;text-align:center;padding:50px 80px;text-align: center;">
+  <h6>This Theme and Website Designed By<br>Yusuf Hanoğlu</h6>
+  
+  </div>
+</div>
+
+
+</body>
+
+
+
+
+</html>
