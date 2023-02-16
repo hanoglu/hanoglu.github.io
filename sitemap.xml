@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?> 
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
 <url>
+<loc>https://hanoglu.net/</loc>
+<changefreq>weekly</changefreq>
+<lastmod>2020-04-11</lastmod>
+</url>
+<url>
+  <loc>http://hanoglu.net/home.html</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2020-04-11</lastmod>
+</url>
+<url>
+  <loc>http://hanoglu.net/hcl.html</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2020-04-11</lastmod>
+</url>
+<url>
+  <loc>http://hanoglu.net/projects.html</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2020-04-11</lastmod>
+</url>
+<url>
+  <loc>http://hanoglu.net/tutorials.html</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2020-04-11</lastmod>
+</url>
+<url>
+  <loc>http://hanoglu.net/contact.html</loc>
+  <changefreq>weekly</changefreq>
+  <lastmod>2020-04-11</lastmod>
+</url>
+<url>
   <loc>http://hanoglu.github.io/home.html</loc>
   <changefreq>weekly</changefreq>
   <lastmod>2020-04-11</lastmod>
